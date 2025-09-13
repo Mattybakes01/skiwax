@@ -1,0 +1,20 @@
+.container
+{
+    display: flex;
+}
+
+.nav-header
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+}
+
+.nav-header img
+{
+    width: 80px;
+    height: 80px;
+}
+
