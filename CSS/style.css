@@ -1,20 +1,153 @@
+html, body
+{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #049669;
+}
+
 .container
 {
     display: flex;
+    flex-direction: column;
+    flex: 1;
+    width:100%;
 }
 
-.nav-header
+span
 {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    gap:20px;
-    width: 100%;
+    color:#049669;
 }
 
-.nav-header img
+.card
+{
+    display: flex;
+    flex: 1;
+}
+
+.header-container
+{
+    height: 80px;
+    background-color: rgb(28, 35, 54);
+    display: flex;
+    justify-content: space-around;
+    gap:50px;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: #324255 1px solid;
+}
+
+.header-container img
 {
     width: 80px;
-    height: 80px;
 }
 
+.header-container button
+{
+    background-color: rgb(4, 150, 105);
+    color: white;
+    padding: 15px;
+    border:#049669 1px solid;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.header-container button:hover
+{
+    background-color: #026648;
+    color: white;
+    padding: 15px;
+    border:#026648 1px solid;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.hero-container
+{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 50px;
+    background-image: linear-gradient(
+                    to bottom right, 
+                    rgba(28, 35, 54, 1), 
+                    rgba(4, 150, 105, 0.9)
+                ), url(../Images/hero-background-img.jpg);
+    background-size: cover;  
+    padding: 100px 0px 100px 0px;
+    color:white;
+    
+}
+
+
+h1
+{
+    font-size: 60px;
+}  
+
+.hero-container p
+{
+    font-weight:400;
+    font-size: 20px;
+}
+
+.hero-container > div
+{
+    max-width: 600px;
+    margin:20px;
+}
+
+.righthero img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border: #049669 2px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.services-container
+{
+    
+}
+
+
+@media (max-width: 600px)
+{
+    .header-container, .hero-container
+    {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .righthero img
+    {
+        width: 300x;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .hero-container
+    {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}

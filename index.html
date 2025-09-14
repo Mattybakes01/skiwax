@@ -9,14 +9,80 @@
   </head>
   <body>
     <div class="container">
-        <div class="card nav-header">
-            <img src="./Images/Copilot_20250913_121759.png" alt="Logo" />
-            <p>Home</p>
-            <p>About</p>
-            <p>Pricing</p>
-            <p>Contact</p>
-            <button><p>Book Now</p></button>
+        <div class="header-container card">
+          <img src="./Images/Copilot_20250913_121759.png" alt="Logo" />
+          <p><a href="#nogo">Home</a></p>
+          <p><a href="#nogo">About</a></p>
+          <p><a href="#nogo">Services</a></p>
+          <p><a href="#nogo">Contact</a></p>
+          <button>Book Now</button>
         </div>
+        <div class="hero-container card">
+          <div class="lefthero">
+            <h1>Alpine Ski <span>Waxing</span> & <span>Tuning</span></h1>
+            <p>Experience the pristine peaks with perfectly tuned equipment. Our Alpine craftsmen bring over 20 years of mountain expertise to every ski we service.</p>
+          </div>
+          <div class="righthero">
+            <img src="./Images/hero-image-right.jpg" alt="Person Skiing" />
+          </div>
+        </div>
+        <div class="about-container card">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique purus hendrerit metus laoreet, sagittis iaculis enim viverra. Duis scelerisque tortor turpis, accumsan facilisis metus viverra id. Proin porta nec quam non mattis. Vivamus metus mauris, accumsan non leo a, volutpat hendrerit velit. Pellentesque suscipit arcu ac tellus venenatis vestibulum. Nunc sit amet consectetur lorem, a consequat est. Sed eu risus ut massa aliquam egestas. Etiam interdum augue a diam cursus, bibendum interdum velit aliquet. In tellus tortor, sollicitudin quis fermentum eget, interdum sit amet enim. Nullam eu iaculis nulla, et pellentesque odio. Pellentesque id velit gravida, iaculis turpis nec, iaculis tortor.</p>
+        </div>
+        <div class="services-container card">
+          <div class="services bronze">
+            <h2>Bronze</h2>
+            <p>Service 1</p>
+            <p>Service 2</p>
+            <p>Service 3</p>
+            <h3>£100</h3>
+          </div>
+          <div class="services silver">
+            <h2>Silver</h2>
+            <p>Service 1</p>
+            <p>Service 2</p>
+            <p>Service 3</p>
+            <h3>£100</h3>
+          </div>
+          <div class="services gold">
+            <h2>Gold</h2>
+            <p>Service 1</p>
+            <p>Service 2</p>
+            <p>Service 3</p>
+            <h3>£100</h3>
+          </div>
+        </div>
+        <div class="contact-container card">
+          <div class="contact-info contact-card">
+            <ul>
+              <li>Tel: 0123456789</li>
+              <li>Email: email@notanemail.com</li>
+              <li>Address: 1 Road<br />The Street<br />County<br/> AA1 1AA</li>
+            </ul>
+          </div>
+          <div class="contact-form contact-card">
+            <form action="#" method="POST" class="formcarry-form">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="fullName" required />
+
+              <label for="email">Your Email Address</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Your Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <footer class="footer-container card">
+          <p>Home</p>
+          <p>About</p>
+          <p>Pricing</p>
+          <p>Contact</p>
+          <button>Book Now</button>
+          <p>Copyright stuff</p>
+        </footer>
     </div>
   </body>
 </html>
