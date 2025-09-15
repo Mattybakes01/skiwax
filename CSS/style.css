@@ -5,6 +5,21 @@ html, body
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1
+{
+    font-size: 60px;
+} 
+
+h2
+{
+    font-size: 50px;
+}
+
+h3
+{
+    font-size: 40px;
+}
+
 a
 {
     color: white;
@@ -33,15 +48,19 @@ span
 {
     display: flex;
     flex: 1;
+    padding:0px;
+    margin: 0px;
 }
 
 .header-container
 {
+    position: fixed;
+    width: 100%;
     height: 80px;
     background-color: rgb(28, 35, 54);
     display: flex;
+    flex:1;
     justify-content: space-around;
-    gap:50px;
     align-items: center;
     font-weight: bold;
     border-bottom: #324255 1px solid;
@@ -78,23 +97,20 @@ span
     display: flex;
     flex: 1;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     background-image: linear-gradient(
                     to bottom right, 
-                    rgba(28, 35, 54, 1), 
-                    rgba(4, 150, 105, 0.9)
+                    rgba(28, 35, 54, 0.95), 
+                    rgba(4, 150, 106, 0.95)
                 ), url(../Images/hero-background-img.jpg);
     background-size: cover;  
-    padding: 100px 0px 100px 0px;
     color:white;
-    
+    padding: 200px 0px 100px 0px;
 }
 
 
-h1
-{
-    font-size: 60px;
-}  
+
 
 .hero-container p
 {
@@ -105,13 +121,12 @@ h1
 .hero-container > div
 {
     max-width: 600px;
-    margin:20px;
+    margin:30px;
 }
 
 .righthero img
 {
     max-width: 100%;
-    height: auto;
     display: block;
     object-fit: cover;
     border: #049669 2px solid;
@@ -119,35 +134,59 @@ h1
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.services-container
+.pricing-container
 {
+    background-image: linear-gradient(
+                    to bottom right, 
+                    rgba(255, 255, 255, 0.95), 
+                    rgba(255, 255, 255, 0.95)
+                ), url(../Images/Pricing-Background.jpg);
+    background-position: center;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-top-section
+{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 50px 0px;
+}
+
+.pricing-container h2
+{
+   font-weight: bold;
+   text-align: center;
+}
+
+.pricing-container p
+{
+   text-align: center;
+}
+
+.pricing-bottom-section
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     
+    gap: 50px;
+    padding: 0px 0px 100px 0px;
 }
 
-
-@media (max-width: 600px)
+.pricing
 {
-    .header-container, .hero-container
-    {
-        flex-direction: column;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .righthero img
-    {
-        width: 300x;
-    }
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border:#e8f3ff 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 30px;
 }
 
-@media (max-width: 1200px)
-{
-    .hero-container
-    {
-        flex-direction: column;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-}
